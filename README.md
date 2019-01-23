@@ -2,10 +2,9 @@
 
 https://github.com/grpc/grpc-web
 
+## let's create our demo
 
-## from 0 to 100 
-
-prerequisites 
+### prerequisites 
  
  - protoc ( this is doing the proto parsing magic and comes with bunch of default compilers ootb : https://github.com/protocolbuffers/protobuf/releases)
  - protoc-gen-go ( plugin to generate go code from proto : https://github.com/golang/protobuf )
@@ -15,7 +14,8 @@ prerequisites
  - envoy ( proxy grpc-web traffic to the grpc server )
 
 
-# steps 
+### steps 
+
 - create a new project
 
 
