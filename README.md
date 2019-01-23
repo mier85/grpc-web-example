@@ -24,7 +24,7 @@ prerequisites
 
 
         mkdir contract
-        touch contract/user.proto
+        touch contract/contract.proto
 
 
 - now let's create the corresponding sources:
