@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package grpcwebexample;
+
+// this line is important for the plugin to know where to put the sources
+option go_package = "github.com/mier85/grpc-web-example/contract;contract";
+
+// defining the service
+service User {
+    rpc CreateUser(CreateUserRequest) returns (CreateUserResponse);
+}
+
+// define the data types
+message CreateUserRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message CreateUserResponse {
+    string uuid = 1;
+}
