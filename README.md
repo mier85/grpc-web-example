@@ -64,7 +64,7 @@ https://github.com/grpc/grpc-web
         
         # now let's get to the hacky part, use webpack to create js that we can load inside the server
         npm init -y
-        npm install --save-dev google-protobuf grpc-web webpack webpack-cli
+        npm install --save-dev npx google-protobuf grpc-web webpack webpack-cli
         
         # create our client
         npx webpack --mode=development --output-library="grpcwebexample"  
