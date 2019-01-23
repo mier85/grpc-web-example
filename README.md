@@ -49,10 +49,6 @@ prerequisites
         # get some logs going for us
         go get -u go.uber.org/zap
         
-        # we need to serve tls for http2, so let's generate some certificates
-        openssl ecparam -genkey -name secp384r1 -out server.key
-        openssl req -new -x509 -sha256 -key server.key -out server.crt -days 3650
-        
         
   - now let's create the web stuff
   
