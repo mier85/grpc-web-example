@@ -10,8 +10,9 @@ prerequisites
  - protoc ( this is doing the proto parsing magic and comes with bunch of default compilers ootb : https://github.com/protocolbuffers/protobuf/releases)
  - protoc-gen-go ( plugin to generate go code from proto : https://github.com/golang/protobuf )
  - protoc-gen-grpc-web ( plugin to create javascript grpc stub : https://github.com/grpc/grpc-web/releases )
- - npm 
- - webpack / webpack-cli
+ - npm ( get out javascript dependencies )
+ - webpack / webpack-cli ( bundle dependencies of gprc-web + own client into a single file )
+ - envoy ( proxy grpc-web traffic to the grpc server )
 
 
 # steps 
